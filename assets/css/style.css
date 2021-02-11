@@ -20,6 +20,7 @@ a {
 body {
   overflow: hidden;
   width: 100%;
+  max-width: 100vw;
   height: 100vh;
   background-color: #1a1a1a;
   background: -webkit-gradient(linear, left top, right top, color-stop(23.96%, #0B0C10), color-stop(54.09%, rgba(65, 11, 11, 0.5)), color-stop(77.6%, #0C0C10)), url("../img/spiderman-bg.png");
@@ -183,7 +184,7 @@ p {
 }
 
 header {
-  max-width: 100%;
+  max-width: 100vw;
   padding-top: 16px;
 }
 
@@ -296,12 +297,6 @@ header {
           transform: scale(1.01);
 }
 
-@media (max-width: 500px) {
-  .nav-link {
-    font-size: 10px !important;
-  }
-}
-
 @media (max-width: 1368px) {
   .container {
     max-width: 1280px;
@@ -312,6 +307,13 @@ header {
 }
 
 @media (max-width: 800px) {
+  body {
+    background: -webkit-gradient(linear, left top, right top, color-stop(13.96%, #0B0C10), color-stop(54.09%, rgba(65, 11, 11, 0.5)), color-stop(97.6%, #0C0C10)), url("../img/spiderman-bg.png") !important;
+    background: linear-gradient(90deg, #0B0C10 13.96%, rgba(65, 11, 11, 0.5) 54.09%, #0C0C10 97.6%), url("../img/spiderman-bg.png") !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position-x: 50% !important;
+  }
   .container {
     margin-top: 50px;
     overflow: hidden;
@@ -351,6 +353,15 @@ header {
 }
 
 @media (max-width: 500px) {
+  .nav-link {
+    font-size: 10px !important;
+  }
+  .nav-list li {
+    margin-left: 12px !important;
+  }
+  .nav-list li:first-child {
+    margin-left: 0 !important;
+  }
   .nav-social {
     display: none !important;
   }
