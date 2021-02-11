@@ -308,8 +308,8 @@ header {
 
 @media (max-width: 800px) {
   body {
-    background: -webkit-gradient(linear, left top, right top, color-stop(13.96%, #0B0C10), color-stop(54.09%, rgba(65, 11, 11, 0.5)), color-stop(97.6%, #0C0C10)), url("../img/spiderman-bg.png") !important;
-    background: linear-gradient(90deg, #0B0C10 13.96%, rgba(65, 11, 11, 0.5) 54.09%, #0C0C10 97.6%), url("../img/spiderman-bg.png") !important;
+    background: -webkit-gradient(linear, left top, right top, color-stop(23.96%, #0B0C10), color-stop(54.09%, rgba(65, 11, 11, 0.5)), color-stop(67.6%, #0C0C10)), url("../img/spiderman-bg.png") !important;
+    background: linear-gradient(90deg, #0B0C10 23.96%, rgba(65, 11, 11, 0.5) 54.09%, #0C0C10 67.6%), url("../img/spiderman-bg.png") !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position-x: 50% !important;
@@ -346,13 +346,10 @@ header {
 }
 
 @media (max-width: 600px) {
-  .container-right img {
-    -webkit-transform: scale(1.2) translate3d(-15%, -20%, 0) !important;
-            transform: scale(1.2) translate3d(-15%, -20%, 0) !important;
+  body {
+    background-size: 200% 100% !important;
+    background-position-x: 50% !important;
   }
-}
-
-@media (max-width: 500px) {
   .nav-link {
     font-size: 10px !important;
   }
@@ -365,6 +362,13 @@ header {
   .nav-social {
     display: none !important;
   }
+  .container-right img {
+    -webkit-transform: scale(1.2) translate3d(-15%, -22.5%, 0) !important;
+            transform: scale(1.2) translate3d(-15%, -22.5%, 0) !important;
+  }
+}
+
+@media (max-width: 500px) {
   .btn {
     padding: 6px 14px !important;
     font-size: 14px !important;
