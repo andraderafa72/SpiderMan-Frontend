@@ -363,7 +363,7 @@ header {
     font-size: 14px !important;
   }
   .container .container-left {
-    min-width: 290px;
+    max-width: 290px;
   }
   .container .container-left .text p {
     font-size: 12px !important;
