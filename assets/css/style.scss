@@ -46,10 +46,13 @@ p {
 @import 'partials/menu';
 @import 'partials/animations';
 
-@media(max-width: 1440px) {
+@media(max-width: 1368px) {
+  .container{
+    max-width: 1280px;
+  }
   .container-right{
     img{
-      width: 120%!important;
+      width: 130%!important;
     }
   }
 }
