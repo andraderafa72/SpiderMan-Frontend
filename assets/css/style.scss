@@ -61,14 +61,13 @@ p {
 // TABLET
 @media(max-width: 800px) {
   body{
-    background: linear-gradient(90deg, #0B0C10 23.96%, rgba(65, 11, 11, 0.5) 54.09%, #0C0C10 67.6%), url('../img/spiderman-bg.png')!important;
+    background: linear-gradient(90deg, #0B0C10 23.96%, rgba(31, 6, 6, 0.7) 54.09%, #0C0C10 67.6%), url('../img/spiderman-bg.png')!important;
     background-size: cover!important;
     background-repeat: no-repeat!important;
     background-position-x: 50% !important;
   }
   .container {
     margin-top: 50px;
-    overflow: hidden;
   }
 
   .btn {
@@ -102,7 +101,7 @@ p {
 
 @media(max-width: 600px) {
   body{
-    background-size: 200% 100%!important;
+    background-size: 250% 100%!important;
     background-position-x: 50% !important;
   }
 
