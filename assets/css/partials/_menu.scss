@@ -68,16 +68,17 @@ header{
     align-items: center;
 
     svg{
-      font-size: 12px;
-      margin-left: 16px;
+      font-size: 24px;
+      margin-left: 24px;
       max-width: 24px;
-      max-height: 12px;
+      max-height: 24px;
 
       path, circle{
         transition: .4s ease;
       }
 
       &:hover{
+        cursor: pointer;
         path, circle{
           fill: $red-light;
           transform: scale(1.01);

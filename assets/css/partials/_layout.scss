@@ -103,6 +103,10 @@
     .icons{
       display: flex;
 
+      svg{
+        max-width: 60px
+      }
+
       :first-child{
         margin-right: 6px;
       }
@@ -111,7 +115,7 @@
   .container-right{
     img{
       width: 150%;
-      transform: translate3d(-20%,0,0);
+      transform: translate3d(-17.5%,0,0);
     }
   }
 }
