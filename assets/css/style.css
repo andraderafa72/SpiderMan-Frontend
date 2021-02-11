@@ -6,6 +6,8 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Mukta';
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
 }
 
 ul {
@@ -15,6 +17,10 @@ ul {
 a {
   text-decoration: none;
   color: #EDF1F7;
+}
+
+html {
+  overflow-y: hidden;
 }
 
 body {
@@ -188,6 +194,27 @@ header {
   padding-top: 16px;
 }
 
+.toggle-nav {
+  position: absolute;
+  top: 24px;
+  right: 16px;
+  display: none;
+}
+
+.toggle-nav a {
+  width: 24px;
+  height: 24px;
+  opacity: 1;
+  fill: white;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.toggle-nav a.focused {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
 .nav-bar {
   max-width: 1440px;
   margin: 0 auto;
@@ -352,11 +379,37 @@ header {
   .nav-link {
     font-size: 10px !important;
   }
+  .nav-list {
+    display: none !important;
+  }
   .nav-list li {
     margin-left: 12px !important;
   }
   .nav-list li:first-child {
     margin-left: 0 !important;
+  }
+  .open {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-transition: .7s ease;
+    transition: .7s ease;
+  }
+  .nav-menu {
+    width: 100%;
+  }
+  .toggle-nav {
+    text-align: right;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   .nav-social {
     display: none !important;

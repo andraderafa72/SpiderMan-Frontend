@@ -3,6 +3,25 @@ header{
   padding-top: 16px;  
 }
 
+.toggle-nav{
+  position: absolute;
+  top: 24px;
+  right: 16px;
+  display: none;
+
+  a{
+    width: 24px;
+    height: 24px;
+    opacity: 1;
+    fill: white;
+    transform: rotate(0deg);
+
+    &.focused{
+      transform: rotate(-90deg);
+    }
+  }
+}
+
 .nav-bar{
   max-width: 1440px;
   margin: 0 auto;
